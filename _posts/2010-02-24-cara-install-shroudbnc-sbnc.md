@@ -34,7 +34,13 @@ cd sbnc-*
 5) Kalau ga ada yang error lanjut make
 {% highlight shell %}
 make
+{% endhighlight %}
+
+6) Dan install
+{% highlight shell %}
 make install
 {% endhighlight %}
+
+
 
 
