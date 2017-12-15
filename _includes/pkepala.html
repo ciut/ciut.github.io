@@ -16,7 +16,7 @@
 	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 	{% if page.img %} {% for img in page.img %} <meta property="og:image" content="{{ page.img }}"> {% endfor %}{% else %} <meta property="og:image" content="{{ site.img }}"> {% endif %}
 	<meta property="og:site_name" content="{{ site.stitle }}" />
-	<meta property="og:type" content="website" />
+	<meta property="og:type" content="article" />
 	<meta property="fb:admins" content="{{ page.author }}" />
 	<meta property="article:published_time" content="{{ page.date }}" />
 	<meta property="article:modified_time" content="{{ page.date }}" />
