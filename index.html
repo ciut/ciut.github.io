@@ -1,23 +1,85 @@
 ---
-layout: default
+layout: bawaan
 ---
 
-<div class="home">
+<!--- mulai --->
+<div class="container col-lg-6 col-lg-offset-3">
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home">Beranda</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#blog">Blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#tentang">Tentang</a>
+  </li>
 
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#kontak">Kontak</a>
+  </li>
+  
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Download</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="https://github.com/ciut/ciut.github.io/blob/master/apps/and/id.my.goez.ciutirc.apk?raw=true">ciutIRC4Android <code>.apk</code></a>
+      <a class="dropdown-item" href="https://github.com/ciut/ciut.github.io/blob/master/apps/java/ciutirc_spfc.jar?raw=true">ciutIRC SPFC <code>.jar</code></a>
+      <a class="dropdown-item" href="https://github.com/ciut/ciut.github.io/blob/master/apps/java/ciutirc_hv_42746.jar?raw=true">ciutIRC HV <code>.jar</code></a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">RuSuH ScRIptS <code>.exe</code></a>
+    </div>
+  </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade show active" id="home">
+    <div class="jumbotron">
+  <h1 class="display-3">wb...</h1>
+  <p class="lead">Selamat datang di website #ciut AllNetwork Indonesia.</p>
+  <hr class="my-4">
+  <p class="lead">
+    <a class="btn btn-outline-primary" href="irc://irc.allnetwork.org/ciut" role="button">/join #ciut</a>
+  </p>
 </div>
+  </div>
+  <div class="tab-pane fade" id="tentang">
+    <div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Tentang</h4>
+    <h6 class="card-subtitle mb-2 text-muted">Tentang chan #ciut</h6>
+    <p class="card-text">Channel ciut di ambil dari kata jawa yang berarti <b class="text-success">sempit</b>. #ciut berdiri pada pertengahan Novermber 2009 yang di founderi oleh nick bgz & syaf. Walau dibilang sempit namun nyatanya #ciut adalah channel yang tidak kalah dengan chan lain nya, karena ciuter'z sangat banyak, walau umumnya kawasan jember dan jawa timur.</p>
+    <a href="https://ciutirc.blogspot.co.id/p/about.html" class="card-link">Selengkapnya..</a>
+  </div>
+</div>
+  </div>
+  <div class="tab-pane fade" id="kontak">
+    <form role="form" action="//formspree.io/ciutirc@gmail.com" method="POST">
+        <div class="form-group">
+            <input type="text" placeholder="Nama" name="name" class="form-control" required="required" />
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="E-mail" name="_replyto" class="form-control" required="required" />
+        </div>
+        <div class="form-group">
+            <textarea rows="8" placeholder="Pesan" name="message" class="form-control" style="resize: none;"></textarea>
+        </div>
+        <input type="submit" value="Kirim" class="btn btn-primary btn-large btn-block" />
+        <input type="hidden" name="_next" value="/tq" />
+    </form>
+  </div>
+   <div class="tab-pane fade" id="blog">
+    <ul class="list-group">
+	<li class="list-group-item d-flex justify-content-between align-items-center">
+   <script src="https://ciut.github.io/js/sitemap4blogspot.js">
+</script><script src="https://ciutirc.blogspot.com/feeds/posts/default?max-results=99999999&amp;alt=json-in-script&amp;callback=loadtoc">
+</script>
+    <span class="badge badge-primary badge-pill">14</span>
+  </li>
+  </div>
+</div>
+  </div>
+ 
+  <div class="tab-pane fade" id="dropdown2">
+    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater.</p>
+  </div>
+</div>
+
