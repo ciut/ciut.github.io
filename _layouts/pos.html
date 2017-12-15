@@ -74,7 +74,7 @@ layout: bawaan
     {{ content }}
 	</p>
 	<hr />
- {% if page.tags %}{% for tag in page.tags %} <a href="{{ site.url }}{{site.baseurl }}/tags"><span class="badge badge-secondary">{{tag}}</span></a> {% endfor %}{% else %} None {% endif %} <a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel="bookmark"><span class="badge badge-dark">Permalink</span></a>
+ {% if page.tags %}{% for tag in page.tags %} <a href="{{ site.url }}{{site.baseurl }}/tags"><span class="badge badge-secondary">{{tag}}</span></a> {% endfor %}{% else %} None {% endif %} <a class="pull-right" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel="bookmark"><span class="badge badge-dark">Permalink</span></a>
 	</article>
   </div>
   </div>
