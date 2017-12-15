@@ -5,55 +5,55 @@ date:   2010-02-24 20:58:30 +7000
 categories: irc bnc
 tags: sbnc
 author: goez
-img: 
+img: https://s18.postimg.org/aeqmy88ux/Screenshot-2017-12-15_s_BNC_Interface_v1_3.png
 ---
 sBNC atau shroudBNC adalah salah satu bouncer yang cukup mempunyai fitur mahal, yakni bisa di kasih tcl,
 jadi mirip bot eggdrop gitu, tcl eggdrop juga bisa di gunakan di sbnc kamu, jadi kamu bot nya, wkwkwk
 
 Untuk debian/ubuntu kamu harus sudah punya tcl dtt untuk install sbnc, jika belum pastikan kamu install yang dibutuhkan via root\
 {% highlight shell %}
-apt-get install build-essential tcl8.5-dev libcurl4-openssl-dev
+ apt-get install build-essential tcl8.5-dev libcurl4-openssl-dev
 {% endhighlight %}
 Proses installasi sBNC pasti sudah punya shell / user vps ya, login akun ssh kamu
 <h5>Installing</h5>
 1) Ambil tar ball sbnc nya
 {% highlight shell %}
-wget http://shroudbnc.info/files/sbnc/sbnc-1.3.9.tar.gz
+ wget http://shroudbnc.info/files/sbnc/sbnc-1.3.9.tar.gz
 {% endhighlight %}
 2) Extrack ya
 {% highlight shell %}
-tar zxf sbnc-1.3.9.tar.gz
+ tar zxf sbnc-1.3.9.tar.gz
 {% endhighlight %}
 
 3) Masuk ke dir sbnc
 {% highlight shell %}
-cd sbnc-*
+ cd sbnc-*
 {% endhighlight %}
 
 4) Konfigure dulu ya
 {% highlight shell %}
-./configure
+ ./configure
 {% endhighlight %}
 
 5) Kalau ga ada yang error lanjut make
 {% highlight shell %}
-make
+ make
 {% endhighlight %}
 
 6) Dan install
 {% highlight shell %}
-make install
+ make install
 {% endhighlight %}
 
 7) Setelah itu kini proses konfigurasi user admin nya, sekarang masuk ke folder <code>sbnc</code>
 {% highlight shell %}
-cd ~
-cd sbnc
+ cd ~
+ cd sbnc
 {% endhighlight %}
 
 8) Buat konfigurasi baru
 {% highlight shell %}
-./sbnc
+ ./sbnc
 {% endhighlight %}
 Maka akan muncul pertanyaan seperti ini
 <pre>
@@ -69,7 +69,7 @@ Isi semua yang dibutuhkan di atas lalu reload sbnc nya sampai pada
  </pre>
 Reload sbnc nya
 {% highlight shell %}
-./sbnc
+ ./sbnc
 {% endhighlight %}
 Jika sukses maka akan tampil kalimat bijak seperti ini
 <pre>
@@ -88,18 +88,18 @@ Beda dengan sbnc yang versi sebelumnya yang sudah sepaket, di versi ini selain u
 
 1) Ambil & untar source webinterface nya dulu
 {% highlight shell %}
-wget http://shroudbnc.info/files/web/sbnciface-1.3.0.tar.gz && tar zxvf sbnciface-1.3.0.tar.gz
+ wget http://shroudbnc.info/files/web/sbnciface-1.3.0.tar.gz && tar zxvf sbnciface-1.3.0.tar.gz
 {% endhighlight %}
 
 2) Rename folder togelnya misal
 {% highlight shell %}
-mv mv sbnciface-s* sbnc
+ mv mv sbnciface-s* sbnc
 {% endhighlight %}
 
 3) Buka pakai SFTP atau pakai vi/nano terserah intinya adalah rename file <code>settings.php.example</code> menjadi <code>settings.php</code>
 Rename via ssh
 {% highlight shell %}
-mv settings.php.example settings.php
+ mv settings.php.example settings.php
 {% endhighlight %}
 
 4) Edit bisa pakai vi, nano, pico dkk, saya pilih notepad++ edit bagian ini
