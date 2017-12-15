@@ -38,7 +38,7 @@ make
 {% endhighlight %}
 
 6) Dan install
-<pre>
+{% highlight shell %}
 make install
 {% endhighlight %}
 
