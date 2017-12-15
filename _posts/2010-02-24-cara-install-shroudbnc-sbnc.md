@@ -83,24 +83,26 @@ Jika sukses maka akan tampil kalimat bijak seperti ini
  [Wed Feb 24 2010 12:47:11]: Starting main loop.
  Daemonizing... DONE
 </pre>
-<h5>Installasi Web Interface nya
+<h5>Installasi Web Interface nya</h5>
 Beda dengan sbnc yang versi sebelumnya yang sudah sepaket, di versi ini selain udah tidak pakai <code>conftool</code> untuk membuat konfig file untuk web iface nya juga ga sepaket lagi, ambil dan install dulu ya, dibutuhkan server yang open port 80, kalau di vps bisa install apache atau nginx juga bisa atau cari hosting gratisan sajalah.
+
 1) Ambil & untar source webinterface nya dulu
 {% highlight shell %}
 wget http://shroudbnc.info/files/web/sbnciface-1.3.0.tar.gz && tar zxvf sbnciface-1.3.0.tar.gz
 {% endhighlight %}
+
 2) Rename folder togelnya misal
 {% highlight shell %}
 mv mv sbnciface-s* sbnc
 {% endhighlight %}
+
 3) Buka pakai SFTP atau pakai vi/nano terserah intinya adalah rename file <code>settings.php.example</code> menjadi <code>settings.php</code>
-{% highlight shell %}
-{% endhighlight %}
-4) Rename via ssh
+Rename via ssh
 {% highlight shell %}
 mv settings.php.example settings.php
 {% endhighlight %}
-5) Edit bisa pakai vi, nano, pico dkk, saya pilih notepad++ edit bagian ini
+
+4) Edit bisa pakai vi, nano, pico dkk, saya pilih notepad++ edit bagian ini
 {% highlight php %}
  $bncServers = array(
    $sbncsrv0 = array(
@@ -112,6 +114,7 @@ mv settings.php.example settings.php
 {% endhighlight %}
 Kalau ada server lain bisa di tambah kalau ga ada hapus yang <code>$sbncsrv1</code>
 Setelah selesai cek ke http nya dan selesai...
+
 
 <h5>Menambah TcL</h5>
 TCL di simpan di dir <code>sbnc/scripts/</code> mirip eggdrop bukan? test satu tcl misal tcl buatan saya seperti ini
