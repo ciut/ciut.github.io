@@ -5,6 +5,7 @@ date:   2010-02-24 20:58:30 +7000
 categories: irc bnc
 tags: sbnc
 ---
+
 sBNC atau shroudBNC adalah salah satu bouncer yang cukup mempunyai fitur mahal, yakni bisa di kasih tcl,
 jadi mirip bot eggdrop gitu, tcl eggdrop juga bisa di gunakan di sbnc kamu, jadi kamu bot nya, wkwkwk
 
