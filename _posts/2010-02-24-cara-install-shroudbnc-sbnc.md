@@ -20,14 +20,17 @@ wget http://shroudbnc.info/files/sbnc/sbnc-1.3.9.tar.gz
 {% highlight shell %}
 tar zxf sbnc-1.3.9.tar.gz
 {% endhighlight %}
+
 3) Masuk ke dir sbnc
 {% highlight shell %}
 cd sbnc-*
 {% endhighlight %}
+
 4) Konfigure dulu ya
 {% highlight shell %}
 ./configure
 {% endhighlight %}
+
 5) Kalau ga ada yang error lanjut make
 {% highlight shell %}
 make
