@@ -7,7 +7,7 @@ layout: bawaan
     <a class="nav-link" href="/">Beranda</a>
   </li>
    <li class="nav-item">
-    <a class="nav-link active" href="/#blog">Blog</a>
+    <a class="nav-link active" data-toggle="tab" href="#blog">Blog</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" data-toggle="tab" href="#tentang">Tentang</a>
@@ -29,6 +29,7 @@ layout: bawaan
   </li>
 </ul>
 	<div id="myTabContent" class="tab-content">
+	{% include tblog.html %}
 	{% include pos.html %}
 	{% include ttentang.html %}
 	{% include tkontak.html %}
