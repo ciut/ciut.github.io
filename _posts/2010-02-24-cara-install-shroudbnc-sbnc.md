@@ -10,13 +10,13 @@ img: https://s18.postimg.org/aeqmy88ux/Screenshot-2017-12-15_s_BNC_Interface_v1_
 sBNC atau shroudBNC adalah salah satu bouncer yang cukup mempunyai fitur mahal, yakni bisa di kasih tcl,
 jadi mirip bot eggdrop gitu, tcl eggdrop juga bisa di gunakan di sbnc kamu, jadi kamu bot nya, wkwkwk
 
-Untuk debian/ubuntu kamu harus sudah punya tcl dtt untuk install sbnc, jika belum pastikan kamu install yang dibutuhkan via root\
+Untuk debian/ubuntu kamu harus sudah punya tcl dtt untuk install sbnc, jika belum pastikan kamu install yang dibutuhkan via root
 {% highlight shell %}
  apt-get install build-essential tcl8.5-dev libcurl4-openssl-dev
 {% endhighlight %}
 Proses installasi sBNC pasti sudah punya shell / user vps ya, login akun ssh kamu
 <h5>Installing</h5>
-1) Ambil tar ball sbnc nya <href="http://www.geocities.ws/ciut/sbnc/sbnc-1.3.9.tar.gz">mirror</a>
+1) Ambil tar ball sbnc nya <a href="http://www.geocities.ws/ciut/sbnc/sbnc-1.3.9.tar.gz">mirror</a>
 {% highlight shell %}
  wget http://shroudbnc.info/files/sbnc/sbnc-1.3.9.tar.gz
 {% endhighlight %}
@@ -86,7 +86,7 @@ Jika sukses maka akan tampil kalimat bijak seperti ini
 <h5>Installasi Web Interface nya</h5>
 Beda dengan sbnc yang versi sebelumnya yang sudah sepaket, di versi ini selain udah tidak pakai <code>conftool</code> untuk membuat konfig file untuk web iface nya juga ga sepaket lagi, ambil dan install dulu ya, dibutuhkan server yang open port 80, kalau di vps bisa install apache atau nginx juga bisa atau cari hosting gratisan sajalah.
 
-1) Ambil & untar source webinterface nya dulu <href="http://www.geocities.ws/ciut/sbnc/sbnciface-1.3.0.tar.gz">mirror</a>
+1) Ambil & untar source webinterface nya dulu <a href="http://www.geocities.ws/ciut/sbnc/sbnciface-1.3.0.tar.gz">mirror</a>
 {% highlight shell %}
  wget http://shroudbnc.info/files/web/sbnciface-1.3.0.tar.gz && tar zxvf sbnciface-1.3.0.tar.gz
 {% endhighlight %}
