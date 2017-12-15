@@ -74,10 +74,10 @@ Reload sbnc nya
 Jika sukses maka akan tampil kalimat bijak seperti ini
 <pre>
  shroudBNC (version: 1.3.9) - an object-oriented IRC bouncer
- Configuration directory: /home/bnc/bnc
- Log directory: /home/bnc/bnc
- Data directory: /home/bnc/bnc
- PID path: /home/bnc/bnc/sbnc.pid
+ Configuration directory: /home/goez/sbnc
+ Log directory: /home/goez/sbnc
+ Data directory: /home/goez/sbnc
+ PID path: /home/goez/sbnc/sbnc.pid
  [Wed Feb 24 2010 12:47:11]: Log system initialized.
  [Wed Feb 24 2010 12:47:11]: Created main listener.
  [Wed Feb 24 2010 12:47:11]: Starting main loop.
