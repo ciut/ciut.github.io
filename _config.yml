@@ -11,10 +11,7 @@ stitle: ciut AllNetwork
 email: ciutirc@gmail.com
 img: https://user-images.githubusercontent.com/8485824/34022380-7dc915d0-e171-11e7-89b1-b4b3d5913276.jpg
 description: > # this means to ignore newlines until "baseurl:"
-  Today i found about myself, and i know what can i do
-  I not understanding about YOU anymore
-  I will way alone without you again
-  I just want give my family happines
+  Channel ciut di ambil dari kata jawa yang berarti sempit. #ciut berdiri pada pertengahan Novermber 2009 yang di founderi oleh nick bgz & syaf. Walau dibilang sempit namun nyatanya #ciut adalah channel yang tidak kalah dengan chan lain nya, karena ciuter'z sangat banyak, walau umumnya kawasan jember dan jawa timur.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ciut.github.io" # the base hostname & protocol for your site
 permalink: /:title/
