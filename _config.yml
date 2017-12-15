@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
   I just want give my family happines
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://ciut.github.io" # the base hostname & protocol for your site
-permalink: /:categories/:title.irc
+permalink: /:title/
 twitter_username: eggoez
 github_username:  eggoez
 
