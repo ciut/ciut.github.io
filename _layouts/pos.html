@@ -28,56 +28,13 @@ layout: bawaan
     </div>
   </li>
 </ul>
-<div id="myTabContent" class="tab-content">
-  <div class="tab-pane fade" id="tentang">
-    <div class="card">
-  <div class="card-body">
-    <h4 class="card-title">Tentang</h4>
-    <h6 class="card-subtitle mb-2 text-muted">Tentang chan #ciut</h6>
-    <p class="card-text">Channel ciut di ambil dari kata jawa yang berarti <b class="text-success">sempit</b>. #ciut berdiri pada pertengahan Novermber 2009 yang di founderi oleh nick bgz & syaf. Walau dibilang sempit namun nyatanya #ciut adalah channel yang tidak kalah dengan chan lain nya, karena ciuter'z sangat banyak, walau umumnya kawasan jember dan jawa timur.</p>
-    <a href="https://ciutirc.blogspot.co.id/p/about.html" class="card-link">Selengkapnya..</a>
-  </div>
-</div>
-  </div>
-  <div class="tab-pane fade" id="kontak">
-    <form role="form" action="//formspree.io/ciutirc@gmail.com" method="POST">
-        <div class="form-group">
-            <input type="text" placeholder="Nama" name="name" class="form-control" required="required" />
-        </div>
-        <div class="form-group">
-            <input type="email" placeholder="E-mail" name="_replyto" class="form-control" required="required" />
-        </div>
-        <div class="form-group">
-            <textarea rows="8" placeholder="Pesan" name="message" class="form-control" style="resize: none;"></textarea>
-        </div>
-        <input type="submit" value="Kirim" class="btn btn-primary btn-large btn-block" />
-        <input type="hidden" name="_next" value="/tq" />
-    </form>
-  </div>
-   <div class="tab-pane fade show active" id="blog">
-   <div class="card">
-   <div class="card-body">
-   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-	<h4 class="card-title post-title" itemprop="name headline">{{ page.title }}</h4>
-    <h6 class="card-subtitle mb-2 text-muted"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>{% if page.author %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</h6>
-	<p class="card-text post-content" itemprop="articleBody">
-    {{ content }}
-	</p>
-	<hr />
- {% if page.tags %}{% for tag in page.tags %} <a href="{{ site.url }}{{site.baseurl }}/tags"><span class="badge badge-secondary">{{tag}}</span></a> {% endfor %}{% else %} None {% endif %} <a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel="bookmark"><span class="badge badge-primary pull-right">Permalink</span></a>
-	</article>
-  </div>
-  </div>
-  </div>
- 
-  <div class="tab-pane fade" id="rusuh">
-    <ul class="list-group">
-	<li class="list-group-item d-flex justify-content-between align-items-center">
-	RuSuH
-	 </li>
-	 </ul>
-	
-  </div>
+	<div id="myTabContent" class="tab-content">
+	{% include tberanda.html %}
+	{% include pos.html %}
+	{% include ttentang.html %}
+	{% include tkontak.html %}
+	{% include tdownload.html %}
+	</div>
 </div>
 
   
