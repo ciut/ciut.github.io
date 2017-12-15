@@ -5,7 +5,6 @@ date:   2010-02-24 20:58:30 +7000
 categories: irc bnc
 tags: sbnc
 ---
-
 sBNC atau shroudBNC adalah salah satu bouncer yang cukup mempunyai fitur mahal, yakni bisa di kasih tcl,
 jadi mirip bot eggdrop gitu, tcl eggdrop juga bisa di gunakan di sbnc kamu, jadi kamu bot nya, wkwkwk
 
@@ -15,32 +14,33 @@ apt-get install build-essential tcl8.5-dev libcurl4-openssl-dev
 Proses installasi sBNC pasti sudah punya shell / user vps ya, login akun ssh kamu
 
 1) Ambil tar ball sbnc nya
-<pre>
+{% highlight shell %}
 wget http://shroudbnc.info/files/sbnc/sbnc-1.3.9.tar.gz
+{% endhighlight %}
 2) Extrack ya
-<pre>
+{% highlight shell %}
 tar zxf sbnc-1.3.9.tar.gz
-</pre>
+{% endhighlight %}
 
 3) Masuk ke dir sbnc
-<pre>
+{% highlight shell %}
 cd sbnc-*
-</pre>
+{% endhighlight %}
 
 4) Konfigure dulu ya
-<pre>
+{% highlight shell %}
 ./configure
-</pre>
+{% endhighlight %}
 
 5) Kalau ga ada yang error lanjut make
-<pre>
+{% highlight shell %}
 make
-</pre>
+{% endhighlight %}
 
 6) Dan install
 <pre>
 make install
-</pre>
+{% endhighlight %}
 
 
 
