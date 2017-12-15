@@ -75,9 +75,9 @@ layout: bawaan
 	</p>
 	</article>
   </div>
+   <hr />
+ {% if page.tags %}{% for tag in page.tags %} <a href="{{ site.url }}{{site.baseurl }}/tags"><span class="badge badge-secondary">{{tag}}</span></a> {% endfor %}{% else %} None {% endif %} <span class="badge badge-dark"><a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel="bookmark">Permalink</a></span>
   </div>
-  <hr />
-  <span class="badge badge-secondary">{{ page.categories }}</span> {% if page.tags %}{% for tag in page.tags %} <a href="{{ site.url }}{{site.baseurl }}/tags"><span class="badge badge-secondary">{{tag}}</span></a> {% endfor %}{% else %} None {% endif %} <span class="badge badge-dark"><a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel="bookmark">Permalink</a></span>
   </div>
  
   <div class="tab-pane fade" id="rusuh">
