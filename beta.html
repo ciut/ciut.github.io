@@ -1,5 +1,9 @@
 <html>
 <head>
+<title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.css"> 
 <link rel="stylesheet" href="https://bootswatch.com/_assets/css/custom.min.css"> 
 <!-- style>body {background: url(http://ciut.github.io/img/bg.jpg)no-repeat center center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;opacity:1.0;filter:alpha(opacity=100);zoom:1; }

@@ -1,0 +1,18 @@
+#!/bin/bash
+echo -e "\e[31mCommit n Push\e[0m"
+budal="y";
+wurung="t";
+read -p "Push?? (y/t)? : " pie
+if [ $pie == $wurung ]; then
+echo ""
+else
+echo -n "Pesan Commit?"
+read pesan
+echo ""
+echo -e "\033[30;43;4mTekan untuk konfirm!\033[0m"
+git add *
+git commit -a -m $pesan
+git push --all
+fi
+echo -e "\e[45mbagus18\e[0m" 
+
