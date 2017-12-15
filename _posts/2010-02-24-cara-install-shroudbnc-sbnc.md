@@ -15,27 +15,27 @@ apt-get install build-essential tcl8.5-dev libcurl4-openssl-dev
 Proses installasi sBNC pasti sudah punya shell / user vps ya, login akun ssh kamu
 
 1) Ambil tar ball sbnc nya
-{% highlight shell %}
+<pre>
 wget http://shroudbnc.info/files/sbnc/sbnc-1.3.9.tar.gz
 2) Extrack ya
-{% highlight shell %}
+<pre>
 tar zxf sbnc-1.3.9.tar.gz
-{% endhighlight %}
+</pre>
 
 3) Masuk ke dir sbnc
-{% highlight shell %}
+<pre>
 cd sbnc-*
-{% endhighlight %}
+</pre>
 
 4) Konfigure dulu ya
-{% highlight shell %}
+<pre>
 ./configure
-{% endhighlight %}
+</pre>
 
 5) Kalau ga ada yang error lanjut make
-{% highlight shell %}
+<pre>
 make
-{% endhighlight %}
+</pre>
 
 6) Dan install
 <pre>
