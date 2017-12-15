@@ -6,10 +6,10 @@ layout: bawaan
 <div class="container col-lg-6 col-lg-offset-3">
 <ul class="nav nav-tabs">
   <li class="nav-item">
-    <a class="nav-link" data-toggle="tab" href="#home">Beranda</a>
+    <a class="nav-link active" data-toggle="tab" href="#home">Beranda</a>
   </li>
    <li class="nav-item">
-    <a class="nav-link active" data-toggle="tab" href="#blog">Blog</a>
+    <a class="nav-link" data-toggle="tab" href="#blog">Blog</a>
   </li>
   <li class="nav-item">
     <a class="nav-link" data-toggle="tab" href="#tentang">Tentang</a>
@@ -67,12 +67,17 @@ layout: bawaan
     </form>
   </div>
    <div class="tab-pane fade" id="blog">
-    <ul class="list-group">
-	<li class="list-group-item d-flex justify-content-between align-items-center">
-   <script src="https://ciut.github.io/js/sitemap4blogspot.js">
-</script><script src="https://ciutirc.blogspot.com/feeds/posts/default?max-results=99999999&amp;alt=json-in-script&amp;callback=loadtoc">
-</script>
-    <span class="badge badge-primary badge-pill">14</span>
+   <ul class="post-list list-group">
+    {% for post in site.posts %}
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
   </li>
   </ul>
   </div>
