@@ -1,7 +1,7 @@
 ---
 layout: pos
 title:  "Cara Install sBNC"
-date:   2010-02-24 20:58 +7000
+date:   2010-02-24 20:58:30 +7000
 categories: irc bnc
 tags: sbnc
 ---
