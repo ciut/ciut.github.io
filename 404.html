@@ -1,115 +1,37 @@
-<html>
-<head>
-<title>404</title>
-</head>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<body bgcolor=#000000>
-<style>
-#theDiv {
- POSITION : relative;  Z-INDEX : 8; VISIBILITY : visible; ALIGN : center;
- }
-</style>
-<body bgcolor="#33FF00" text="#66FF00" onload="doWave(0)">
-<div ID="theDiv" align="center"></div>
-<script language="JavaScript">
-function nextSize(i,incMethod,textLength)
-{
-if (incMethod == 1) { return (22*Math.abs(Math.sin(i/(textLength/3.14))) );
-}
-if (incMethod == 2) { return (255*Math.abs(Math.cos(i/(textLength/3.14))));
-}
-return(0)
-}
-function sizeCycle(text,method,dis)
-{
-var output = "";
-for (i = 0; i < text.length; i++) {
-size = parseInt(nextSize(i +dis,method,text.length));
-output += "<font style='font-size: "+ size +"pt'>" +text.substring(i,i+1)+ "</font>";
-}
-if (document.all)
-theDiv.innerHTML = output;
-else if (document.getElementById){
-rng = document.createRange();
-el = document.getElementById('theDiv');
-rng.setStartBefore(el);
-htmlFrag = rng.createContextualFragment(output);
-while (el.hasChildNodes()) el.removeChild(el.lastChild);
-el.appendChild(htmlFrag);}
-else if (document.layers){
-document.theDiv.document.write("<font face='Segoe Script, Trebuchet MS'point-size=11>"+output+"</font>");
-document.theDiv.document.close();}
-}
-function doWave(n) {
-var theText = '404 Tidak di Temukan';
+---
+layout: bawaan
+---
 
-sizeCycle(theText,1,n);
-if (n > theText.length) {
-n=0
-}
-setTimeout("doWave(" + (n+1) + ")", 50);
-}
+<!-- mulai -->
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home">Beranda</a>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#blog">Blog</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#tentang">Tentang</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#kontak">Kontak</a>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Download</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="https://github.com/ciut/irc/releases/download/1.0/ciutIRC4Android.apk">ciutIRC4Android <code>.apk</code></a>
+      <a class="dropdown-item" href="https://github.com/ciut/irc/releases/download/1.0/ciutIRC.SPFC.jar">ciutIRC SPFC <code>.jar</code></a>
+      <a class="dropdown-item" href="https://github.com/ciut/irc/releases/download/1.0/ciutIRC.HV.jar">ciutIRC HV <code>.jar</code></a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" data-toggle="tab" href="#rusuh">RuSuH ScRIptS <code>.exe</code></a>
+    </div>
+  </li>
+</ul>
+	<div id="myTabContent" class="tab-content">
+	{% include t404.html %}
+	{% include tblog.html %}
+	{% include ttentang.html %}
+	{% include tkontak.html %}
+	{% include tdownload.html %}
+	</div>
 
-</script>
-
-<h1><script language="JavaScript1.2"> 
-var message="#ciut AllNetwork"
-var neonbasecolor="black"
-var neontextcolor="#00ff00"
-var neontextcolor2="#00ff00"
-var flashspeed=100						// speed of flashing in milliseconds
-var flashingletters=1						// number of letters flashing in neontextcolor
-var flashingletters2=1						// number of letters flashing in neontextcolor2 (0 to disable)
-var flashpause=0						// the pause between flash-cycles in milliseconds
-
-///No need to edit below this line/////
-
-var n=0
-if (document.all||document.getElementById){
-document.write('<font color="'+neonbasecolor+'">')
-for (m=0;m<message.length;m++)
-document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
-document.write('</font>')
-}
-else
-document.write(message)
-
-function crossref(number){
-var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
-return crossobj
-}
-
-function neon(){
-
-//Change all letters to base color
-if (n==0){
-for (m=0;m<message.length;m++)
-crossref(m).style.color=neonbasecolor
-}
-
-//cycle through and change individual letters to neon color
-crossref(n).style.color=neontextcolor
-
-if (n>flashingletters-1) crossref(n-flashingletters).style.color=neontextcolor2 
-if (n>(flashingletters+flashingletters2)-1) crossref(n-flashingletters-flashingletters2).style.color=neonbasecolor
-
-
-if (n<message.length-1)
-n++
-else{
-n=0
-clearInterval(flashing)
-setTimeout("beginneon()",flashpause)
-return
-}
-}
-
-function beginneon(){
-if (document.all||document.getElementById)
-flashing=setInterval("neon()",flashspeed)
-}
-beginneon()
-</script></h1>
-</center>
-</body>
-</html>
