@@ -4,7 +4,7 @@ title: "Channel Mode & User Mode di AllNetwork"
 date: 2009-03-17 19:32:30 +7000
 categories: irc
 tags: allnetwork
-author: goez
+author: catHy
 img: https://raw.githubusercontent.com/ciut/ciut.github.io/jadul/img/portfolio-2.jpg
 ---
 
@@ -46,17 +46,17 @@ Sekarang yang termasuk With Parameters. Apa saja itu? Ini dia:
 
 +l : Limit, artinya membatasi jumlah user yang akan masuk ke dalam channel. Perintahnya adalah: /raw mode #namachannel +l batas. Misal /raw mode #help +l 100. Angka 100 disini adalah jumlah user yang akan dibatasi untuk masuk/JOIN kedalam channel.
 
-+v : Voice, artinya FLAGS +v/voice ini berfungsi jikalau set channel berada dalam keadaan +m/MODERATE. Perintahnya adalah /raw mode #namachannel +v nick. Misal /raw mode #help +v kamekz.
++v : Voice, artinya FLAGS +v/voice ini berfungsi jikalau set channel berada dalam keadaan +m/MODERATE. Perintahnya adalah /raw mode #namachannel +v nick. Misal /raw mode #help +v goez.
 
-+h : Halfop, artinya setengah operator. Yang memiliki flags +h/halfop dapat melakukan perintah kick, banned, melakukan perubahan set CMode secara manual. +h/halfop tidak dapat melakukan kick, banned, -o/deop terhadap +o/op. Perintahnya adalah /raw mode #namachannel +h NICK. Misal /raw mode #help +h kamekz.
++h : Halfop, artinya setengah operator. Yang memiliki flags +h/halfop dapat melakukan perintah kick, banned, melakukan perubahan set CMode secara manual. +h/halfop tidak dapat melakukan kick, banned, -o/deop terhadap +o/op. Perintahnya adalah /raw mode #namachannel +h NICK. Misal /raw mode #help +h goez.
 
-+o : Op, artinya user yang mendapat FLAGS +o/op dapat melakukan kendali penuh terhadap channel, seperti mengatur CMode dan menghapus/DELETE FLAGS baik itu +o/op, +h/halfop, +v/voice, +b/ban. Semua itu bisa dilakukan jika FLAGSnya minimal SOP/Super Operator dichannel. Perintah +o adalah /raw mode #namachannel +o NICK. Misal /raw mode #help +o kamekz.
++o : Op, artinya user yang mendapat FLAGS +o/op dapat melakukan kendali penuh terhadap channel, seperti mengatur CMode dan menghapus/DELETE FLAGS baik itu +o/op, +h/halfop, +v/voice, +b/ban. Semua itu bisa dilakukan jika FLAGSnya minimal SOP/Super Operator dichannel. Perintah +o adalah /raw mode #namachannel +o NICK. Misal /raw mode #help +o goez.
 
 +b : Ban, artinya mencegah user memasuki channel. jenis BAN ini ada 3, ban NICK, ban IDENT dan ban IP/HOST.
 
-+e : Exempt, artinya memungkinkan user masuk channel walau sudah di set +b/ban. Set +e bisa terhadap NICK, IDENT dan IP/HOST. Perintahnya /raw mode #namachannel +e NICK. Misal /raw mode #help +e kamekz.
++e : Exempt, artinya memungkinkan user masuk channel walau sudah di set +b/ban. Set +e bisa terhadap NICK, IDENT dan IP/HOST. Perintahnya /raw mode #namachannel +e NICK. Misal /raw mode #help +e goez.
 
-+I : Invite Exempt, artinya memudahkan user untuk bergabung jika set channel +i/INVITE ONLY. Set +I bisa terhadap NICK, IDENT dan IP/HOST. Perintahnya /raw mode #namachannel +I NICK. Misal /raw mode #help +I kamekz.
++I : Invite Exempt, artinya memudahkan user untuk bergabung jika set channel +i/INVITE ONLY. Set +I bisa terhadap NICK, IDENT dan IP/HOST. Perintahnya /raw mode #namachannel +I NICK. Misal /raw mode #help +I goez.
 
 Sekarang masuk kepada UMode/User Mode:
 
