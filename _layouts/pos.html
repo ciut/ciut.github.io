@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="id">
 {% include pkepala.html %}
-
+{% assign minutes = content | number_of_words | divided_by: 180 %}
+{% if minutes == 0 %}
+{% assign minutes = 1 %}
+{% endif %}
   <body> 
 
 <!-- mulai post blog -->
