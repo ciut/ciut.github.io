@@ -3,7 +3,7 @@
    <div class="card-body">
    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 	<h4 class="card-title post-title" itemprop="name headline">{{ page.title }}</h4>
-    <h6 class="card-subtitle mb-2 text-muted"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time>{% if page.author %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} {{minutes}} read.</h6>
+    <h6 class="card-subtitle mb-2 text-muted"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %B %Y" }}</time>{% if page.author %} by <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %} {{minutes}} minute read.</h6>
 	<div class="card-text post-content" itemprop="articleBody">
     {{ content }}
 	</div>
