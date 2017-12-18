@@ -5,7 +5,7 @@ date:   2012-06-18 20:58:30 +7000
 categories: irc vps
 tags: sbnc eggdrop znc pstonic psybnc
 author: genin
-img: https://s18.postimg.org/aeqmy88ux/Screenshot-2017-12-15_s_BNC_Interface_v1_3.png
+img: https://s17.postimg.org/91h3uvrpr/cron.jpg
 ---
 
 Secara sederhana crontab adalah sebuah program yang akan menjalankan perintah kita sesuai waktu/schedule yang kita setting, apakah menitan, jam²an, harian, mingguan, bulanan atau tahunan, misalnya untuk auto backup. Selain crontab ada beberapa lain yang sejenis dengan fungsi yang sama, kira2 begitu penjelasan sederhananya..
