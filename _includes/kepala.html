@@ -20,11 +20,5 @@
 	{% include css.html %}
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
-	<script>
-	$.fn.pause = function(duration) {
-    $(this).animate({ dummy: 1 }, duration);
-    return this;
-	};
-	$("#ndelik").pause(5000).fadeOut();
-	</script>
+	<script>setTimeout(function() { $('#ndelik').fadeOut(); }, 5000);</script>
 </head>
