@@ -8,7 +8,7 @@
     {{ content }}
 	</div>
 	<hr />
- {% if page.tags %}{% for tag in page.tags %} <a href="{{ site.url }}{{site.baseurl }}/tags"><span class="badge badge-secondary">{{tag}}</span></a> {% endfor %}{% else %} None {% endif %} <a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel="bookmark"><span class="badge badge-primary pull-right">Permalink</span></a>{% include bagi.html %}
+ {% if page.tags %}{% for tag in page.tags %} <a href="{{ site.url }}{{site.baseurl }}/tags"><span class="badge badge-secondary">{{tag}}</span></a> {% endfor %}{% else %} None {% endif %} <a href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" rel="bookmark"><span class="badge badge-primary pull-right">Permalink</span></a> {% include bagi.html %}
 	</article>
   </div>
   </div>
