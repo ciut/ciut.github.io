@@ -40,10 +40,12 @@ itu berarti anda belum install <a href="http://eg-goez.blogspot.com/2010/04/erro
 Jika anda pengguna <b>CentOS</b> silahkan gunakan perintah:
 {% highlight shell %}yum install gcc-c++{% endhighlight %}
 Setelah selesai<i> ./configure</i> ulang
-Jika anda menemukan masalah seperti ini:<pre>
+Jika anda menemukan masalah seperti ini:
+<pre>
 checking for icu... no
 configure: WARNING: support for charset conversion not found and thus disabled
-checking for GNU make... configure: error: could not find GNU make</pre>
+checking for GNU make... configure: error: could not find GNU make
+</pre>
 Tandanya vps anda baru :D hehe, install dulu make nya:
 Pada <b>Debian/Unbuntu</b> kasih perintah ini:
 {% highlight shell %}apt-get install make{% endhighlight %}
@@ -59,13 +61,15 @@ ZNC sudah dikonfigurasi lakukan <i>make</i>
 Setelah itu lakukan <i>make install</i>
 {% highlight shell %}make install{% endhighlight %}
 
-ika Sukses anda akan menemukan pesan ini (jika root)<pre>
+Jika Sukses anda akan menemukan pesan ini (jika root)
+<pre>
  ZNC was successfully installed.
  You can use '/usr/local/bin/znc --makeconf'
  to generate a config file.
 
  If you need help with using ZNC, please visit our wiki at:
- http://znc.in</pre>
+ http://znc.in
+</pre>
 
 Baik install ZNC nya selesai, sekarang proses pembuatan file konfigurasi ZNC, untuk root dulu ya, jika anda install tadi as root, anda harus membuat user baru, atau yang sudah ada tidak apa², misal saya ingin membuat user <b>znc</b>, dengan perintah
 {% highlight shell %}adduser znc{% endhighlight %}
