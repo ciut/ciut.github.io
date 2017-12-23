@@ -22,6 +22,9 @@
       <div class="modal-body">
 	 <input id="salintext" class="text form-control input-sm" type="text" value="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" onclick="this.select();document.execCommand('copy');" onkeyup="alert('Tersalin..!!');"/>
 		</div>
+		<div class="modal-footer">
+          <p><span id="tips">Klik textarea di atas untuk memilih semua & menyalink link!</span></p> 
+      </div>
 		</div>
 	</div>
 </div>
