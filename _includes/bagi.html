@@ -1,0 +1,12 @@
+<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+  <button type="button" class="btn btn-primary">Bagikan</button>
+  <div class="btn-group" role="group">
+    <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+	<a class="dropdown-item" href="https://twitter.com/intent/tweet?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}&amp;text=via @eggoez" target="_blank" title="Share via Twitter">Twitter</a>  
+<a class="dropdown-item" href="https://www.facebook.com/sharer.php?u={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share via Facebook">Facebook</a>
+<a class="dropdown-item" href="https://api.whatsapp.com/send?text={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share via WhatsApp">WhatsApp</a>
+<a class="dropdown-item" href="https://t.me/share/url?url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" target="_blank" title="Share via Telegram">Telegram</a>
+    </div>
+  </div>
+</div>
