@@ -20,7 +20,7 @@
 		  <span aria-hidden="true">&times;</span>
 		  </button></div>
       <div class="modal-body">
-	 <input class="text form-control input-sm" id="copylink inputSmall" type="text" value="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" onclick="this.select()" onkeyup="select_text();"/>
+	 <input class="text form-control input-sm" id="copylink inputSmall" type="text" value="{{ page.title}} | {{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" onclick="this.select()" onkeyup="select_text();"/>
 		</div>
 		</div>
 	</div>
