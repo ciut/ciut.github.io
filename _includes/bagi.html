@@ -20,7 +20,7 @@
 		  <span aria-hidden="true">&times;</span>
 		  </button></div>
       <div class="modal-body">
-	 <input id="salintext" class="text form-control input-sm" type="text" value="{{ page.title}} | {{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" onclick="this.select();document.execCommand('copy');" onkeyup="alert('Tersalin..!!');"/>
+	 <input id="salintext" class="text form-control input-sm" type="text" value="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" onclick="this.select();document.execCommand('copy');" onkeyup="alert('Tersalin..!!');"/>
 		</div>
 		</div>
 	</div>
