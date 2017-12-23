@@ -3,7 +3,7 @@ layout: halaman
 title: Tags
 permalink: /tags/
 ---
-	 <div class="col-md-12 pull-left">
+	
             <section>
             {% capture tags %}
                 {% for tag in site.tags %}
@@ -26,17 +26,5 @@ permalink: /tags/
                 </ul>
             {% endfor %}
             </section>
-        </div>
-        <div class="col-md-5 hidden-xs">
-		<h4>Tag populer</h4>
-            <section class="tags">
-                <ul>
-                    {% for tag in site.tags %}
-                    <li>
-                        <a href="#{{ tag | first | slugize }}"> <span class="text-danger glyphicon glyphicon-tag"></span> {{ tag | first }}</a> <span class="text-muted">({{ tag | last | size}})</span>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </section>
-    </div>
+       
 
