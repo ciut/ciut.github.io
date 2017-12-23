@@ -24,9 +24,10 @@
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 	<script src="/assets/js/top.js"></script>
-	<script>document.getElementById("copylink").onclick = function() {
+	<script>
+	document.getElementById("copy-text").onclick = function() {
   this.select();
   document.execCommand('copy');
-  alert('Tersalin!');
-  }	</script>
+  alert('Tersalin..!!');
+}</script>
 </head>
