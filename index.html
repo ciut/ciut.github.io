@@ -17,6 +17,15 @@ layout: bawaan
     <a class="nav-link" data-toggle="tab" href="#kontak">Kontak</a>
   </li>
   {% include ndownload.html %}
+  
+  <!-- untuk mobile -->
+  <li class="dropdown hidden-lg hidden-md">
+					<a href="#" data-toggle="dropdown">More <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+							  <li class="nav-item hidden-xs hidden-sm"><a class="nav-link" data-toggle="tab" href="#kontak">Kontak</a></li>
+							  {% include ndownload.html %}
+                        </ul>
+                </li>
 </ul>
 	<div id="myTabContent" class="tab-content">
 	{% include tberanda.html %}
