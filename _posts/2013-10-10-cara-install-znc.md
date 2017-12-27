@@ -14,7 +14,9 @@ Login vps anda, disini saya menggunakan root, jika anda tidak punya akses root, 
 ika anda menggunakan root taruh file znc yang akan di install pada dir <i>/usr/local/src</i> ya, kalau user taruh di <i>/home/username</i> ajah.
 {% highlight shell %}cd /usr/local/src{% endhighlight %}
 
-Lalu wget source nya, anda bisa lihat pada <a href="http://wiki.znc.in/">wiki.znc.in</a> untuk versi stabil, disini saya menggunakan znc nightly latest.
+Lalu wget source nya, untuk versi stabil.
+{% highlight shell %}wget znc.in/releases/znc-latest.tar.gz{% endhighlight %}
+disini saya menggunakan znc nightly latest.
 {% highlight shell %}wget znc.in/nightly/znc-latest.tar.gz{% endhighlight %}
 
 Setelah itu Extrack file nya:
