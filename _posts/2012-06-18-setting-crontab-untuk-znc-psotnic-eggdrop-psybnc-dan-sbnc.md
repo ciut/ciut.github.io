@@ -19,7 +19,7 @@ crontab -e
 {% endhighlight %}
 kemudian masukkan kode ini
 {% highlight shell %}
-*/10 * * * * /home/znc/znc/znc >/dev/null 2>&1
+0,10,20,30,40,50 * * * * /home/znc/znc/znc >/dev/null 2>&1
 {% endhighlight %}
 (cttn: ganti folder path <code>/home/znc/znc</code> dgn folder znc anda sendiri misalnya <code>/home/sifulan/znc-0.202/znc</code>)<br />
 Save dengan menekan <b>ctrl+o</b> dan <b>Enter</b>.
