@@ -4,6 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="theme-color" content="ligtgray">
 	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:card" content="notify_persist_connected.png" />
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }}{% else %}#{{ site.title | escape }}{% endif %}" />
 	<meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 	{% if page.img %} {% for img in page.img %} <meta property="twitter:image" content="{{ page.img }}"> {% endfor %}{% else %} <meta property="twitter:image" content="{{ site.img }}"> {% endif %}
@@ -18,6 +19,7 @@
 	<meta property="og:site_name" content="{{ site.stitle }}" />
 	<meta property="og:type" content="website" />
 	{% include css.html %}
+	<link rel="shortcut icon" href="{{ site.url }}{{ site.baseurl }}/assets/icon/notify_persist_connected.png" />	
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 	<script>setTimeout(function() { $('#ndelik').fadeOut(); }, 5000);</script>
