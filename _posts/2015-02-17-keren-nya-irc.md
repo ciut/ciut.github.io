@@ -18,16 +18,18 @@ Ini adalah daftar alat, perangkat lunak & sumber daya lainnya yang terkait denga
 - [HexChat](https://hexchat.github.io) - based on XChat, easy to use, spell check & multiple languages ([source](https://github.com/hexchat/hexchat)) `Windows` `macOS` `Linux`
 - [Kiwi IRC](https://kiwiirc.com) - a powerful modern IRC messenger for the web ([source](https://github.com/kiwiirc/kiwiirc), [demo](https://kiwiirc.com/nextclient/)) `Web`
 - [CIRC](https://flackr.github.io/circ/) - uses the chrome.sockets APIs to connect directly to IRC servers without needing a proxy ([source](https://github.com/flackr/circ)) `Chrome`
-- [nirc](https://github.com/cjstewart88/nirc) - simple ([demo](https://nirc.herokuapp.com)) `Web`
-- [Quassel](http://quassel-irc.org) - distributed (clients can attach to and detach from a central core that stays permanently online ([source](https://github.com/quassel/quassel)) `Linux` `macOS` `Windows`
+- [Quassel](https://quassel-irc.org) - distributed (clients can attach to and detach from a central core that stays permanently online ([source](https://github.com/quassel/quassel)) `Linux` `macOS` `Windows`
 - [Yaaic](https://www.yaaic.org) - multi-server/channel support, SASL support, Smooth channel scrolling / swiping ([source](https://github.com/pocmo/Yaaic)) `Android`
 - [koko](https://github.com/KokoIRC/koko) - minimalistic design, VIM-like shortcuts and built on electron `Windows` `macOS`
 - [relay.js](https://github.com/Fauntleroy/relay.js) - focuses on making IRC less intimidating and easier to use ([demo](http://demo.relayjs.com)) `Web`
 - [Circe](https://github.com/jorgenschaefer/circe) - for use in Emacs, sane defaults `Emacs`
 - [Smuxi](https://smuxi.im) - user-friendly, based on GNOME / GTK+ ([source](https://github.com/meebey/smuxi)) `Linux` `Windows` `macOS`
-- [aIRChat](https://github.com/zsck/aIRChat) - beautiful, modernized, browser-based `Web`
 - [KVIrc](http://www.kvirc.net) - free, portable, based on Qt GUI toolkit ([source](https://github.com/kvirc/KVIrc)) `Linux` `macOS` `Windows`
 - [Konversation](https://konversation.kde.org) - user-friendly client built on the KDE Platform ([source](https://github.com/KDE/konversation)) `Linux`
+- [sic](https://tools.suckless.org/sic/) - **s**imple **I**RC **c**lient - a terminal client in less than 250 lines of C. `Linux`
+- [Colloquy](http://colloquy.info) - AppleScript-enabled IRC client `macOS`
+- [irssi](https://irssi.org/) - Terminal client, multi-protocol friendly for module authors, GPLv2. `Linux` `macOS` `Cygwin` `BSD`
+- [WeeChat](https://weechat.org/) - a fast, light and extensible chat client ([source](https://github.com/weechat/weechat)) `Linux` `macOS` `Windows`
 
 *More? Clients that include bouncers are found [below](#bouncers).*
 
@@ -46,12 +48,10 @@ Ini adalah daftar alat, perangkat lunak & sumber daya lainnya yang terkait denga
 
 #### Self-hosted
 
-- [Convos](https://convos.by/) - Always online web IRC client ([source](https://github.com/Nordaaker/convos), [demo](http://demo.convos.by/)) `Perl` `JavaScript` `Web`
+- [Convos](https://convos.by/) - Always online web IRC client ([source](https://github.com/Nordaaker/convos), [demo](https://demo.convos.by/)) `Perl` `JavaScript` `Web`
 - [ZNC](http://wiki.znc.in/ZNC) - most popular. many different plugins ([source](https://github.com/znc/znc))
-- [IRCAnywhere](http://ircanywhere.com) - built for teams and gives control + privacy to you (alpha) ([source](https://github.com/ircanywhere/ircanywhere))
-- [TapChat](http://tapchatapp.com) - modern IRC ([source](https://github.com/tapchat/tapchat))
-  - [Android App](https://github.com/tapchat/tapchat-android) - source only `Java`
-- [TheLounge](https://thelounge.github.io/) - responsive, self-hosted & support for multiple users ([source](https://github.com/thelounge/lounge), [demo](https://demo.thelounge.chat)) `JavaScript` `Node.js` `Web`
+- [BIP IRC Proxy](https://bip.milkypond.org/) - Always online, lightweight and secure Open Source IRC proxying with backlogging ([source](https://projects.duckcorp.org/projects/bip/repository)) `C`
+- [TheLounge](https://thelounge.chat/) - responsive, self-hosted & support for multiple users ([source](https://github.com/thelounge/thelounge), [demo](https://demo.thelounge.chat)) `JavaScript` `Node.js` `Web`
 
 ### Daemons
 
@@ -64,6 +64,7 @@ Ini adalah daftar alat, perangkat lunak & sumber daya lainnya yang terkait denga
 - [Hulk](https://github.com/chrisdone/hulk) - intended for private business use or hobby work `Haskell`
 - [Oragono](https://oragono.io/) - modern, experimental server that's portable and designed around specifications ([source](https://github.com/oragono/oragono))
 - [charybdis](https://github.com/charybdis-ircd/charybdis) - scalable IRCv3 server
+- [RobustIRC](https://robustirc.net/) - IRC server without netsplits
 
 ### Services
 
@@ -88,31 +89,36 @@ Ini adalah daftar alat, perangkat lunak & sumber daya lainnya yang terkait denga
 - [talkbackbot](https://geekchick77.dreamwidth.org/472.html) - responds to configured trigger phrases with quotes from notable women ([source](https://github.com/jessamynsmith/talkbackbot)) `Python`
 - [lazybot](https://github.com/Raynes/lazybot) - user-friendly and powerful `Clojure`
 - [IRC-BF](https://github.com/SirCmpwn/bf-irc-bot) - `Brainfuck`
-- [geordi](http://www.eelis.net/geordi/) - compiles and runs C++ code snippets ([source](https://github.com/Eelis/geordi)) `C++`
+- [geordi](https://github.com/Eelis/geordi) - compiles and runs C++ code snippets `C++`
 - [CloudBot](https://github.com/CloudBotIRC/CloudBot) - simple, fast, expandable `Python`
+- [yossarian-bot](https://github.com/woodruffw/yossarian-bot) - large default plugin set, Cinch-based `Ruby`
+- [helga](https://github.com/shaunduncan/helga) - Pluggable chat bot supporting multiple protocols `Python`
 
 ### Frameworks
 
 *Helpful to write bots or integrate IRC with applications.*
 
-- [node-irc](https://github.com/martynsmith/node-irc) `JavaScript`
+- [node-irc](https://github.com/Throne3d/node-irc) `JavaScript`
 - [Cinch](https://github.com/cinchrb/cinch) - quickly create bots with minimal effort `Ruby`
 - [goirc](https://github.com/fluffle/goirc) - event-based, stateful, lacking documentation `Go`
 - [Hubot IRC Adapter](https://github.com/nandub/hubot-irc) - the IRC adapter for hubot `JavaScript`
 - [go-ircevent](https://github.com/thoj/go-ircevent) - event-based `Go`
 - [pyaib](https://github.com/facebook/pyaib) - easy to use framework for writing bots `Python`
 - [slate-irc](https://github.com/slate/slate-irc) - plugin system, simple api, arbitrary input stream, debug support `JavaScript`
-- [Jerk](https://github.com/gf3/Jerk) - ridiculously simple to set-up and get going `JavaScript`
+- [PircBotX](https://github.com/pircbotx/pircbotx) - Event based IRC Library with a straightforward API (updated fork of [PircBot](http://www.jibble.org/pircbot.php)) `Java`
+- [IRC::Client](https://github.com/zoffixznet/perl6-IRC-Client) - `Perl6` based extendable IRC client framework
 
 #### Bridges
 
 *Sends messages back and forth.*
 
+- [discord-irc](https://github.com/reactiflux/discord-irc) - Discord <-> IRC `JavaScript`
 - [slack-irc](https://github.com/ekmartin/slack-irc) - Slack <-> IRC `JavaScript`
-- [CamperVan](https://github.com/zerowidth/camper_van) - Campfire <-> IRC `Ruby`
 - [BitlBee](https://www.bitlbee.org/main.php/news.r.html) - XMPP, Jabber, Google Talk, MSN Messenger, Yahoo! Messenger, AIM, ICQ, Twitter API, HipChat <-> IRC `C`
 - [teleirc](https://github.com/FruitieX/teleirc) - Telegram <-> IRC `JavaScript`
 - [toxirc](https://github.com/endoffile78/toxirc) - Tox <-> IRC `C`
+- [skyweb2irc](https://github.com/ProgVal/skyweb2irc) - Skype (webclient API) <-> IRC `Javascript`
+- [whapp-irc](https://github.com/lieuwex/whapp-irc) - WhatsApp Web <-> IRC `Go`
 
 ### Channels
 
@@ -147,7 +153,7 @@ Ini adalah daftar alat, perangkat lunak & sumber daya lainnya yang terkait denga
 
 - [Please don't use Slack for FOSS projects](https://drewdevault.com/2015/11/01/Please-stop-using-slack.html) - Drew DeVault's Blog
 - [IRC Networks Under Systematic Attack From Governments](https://www.quakenet.org/articles/102-press-release-irc-networks-under-systematic-attack-from-governments) - QuakeNet
-- [IRC is dead, long live IRC](http://royal.pingdom.com/2012/04/24/irc-is-dead-long-live-irc/) - Royal Pingdom
+- [IRC is dead, long live IRC](https://royal.pingdom.com/2012/04/24/irc-is-dead-long-live-irc/) - Royal Pingdom
 - [IRC Has Lost 60% Of Its Users Since 2003, But Life As A Robot Is Just Beginning](https://techcrunch.com/2013/01/06/irc-has-lost-60-of-its-users-since-2003-but-life-as-a-robot-is-just-beginning/) - Alex Williams (TechCrunch)
 
 ### Guides
@@ -162,7 +168,7 @@ Ini adalah daftar alat, perangkat lunak & sumber daya lainnya yang terkait denga
 
 *Information and resources about the IRC protocol itself.*
 
-- [IRCv3 Working Group](http://ircv3.net) - a group of IRC software authors working to enhance, improve, maintain and standardize the IRC protocol ([source](https://github.com/ircv3/ircv3.github.io))
+- [IRCv3 Working Group](https://ircv3.net) - a group of IRC software authors working to enhance, improve, maintain and standardize the IRC protocol ([source](https://github.com/ircv3/ircv3.github.io))
 - [Modern IRC Documents](http://modern.ircdocs.horse/) - an attempt to write an update to the original IRC protocol documentation ([source](https://github.com/ircdocs/modern-irc))
 - [IRC Definition Files](http://defs.ircdocs.horse/) - lists of numerics, modes, ISUPPORT tokens and other protocol details ([source](https://github.com/ircdocs/irc-defs))
 - [grawity's IRC docs](https://github.com/grawity/irc-docs) - collection of misc IRC protocol documentation
@@ -179,7 +185,7 @@ Ini adalah daftar alat, perangkat lunak & sumber daya lainnya yang terkait denga
 
 The best ways to use this list are:
 
-- by browing the [contents](#contents)
+- by browsing the [contents](#contents)
 - by using <kbd>command</kbd> + <kbd>F</kbd> to search the contents
 
 This list also uses tags to help when searching the contents:
