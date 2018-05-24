@@ -145,7 +145,7 @@ Jangan lupa untuk edit <code>sbnc.tcl</code> dan menambahkan baris baru contoh
  source "scripts/plat.tcl"
 {% endhighlight %}
 Setelah itu rehash sbnc kamu via irc
-<pre>/sbnc rehash</pre>
+<pre>/sbnc tcl rehash</pre>
 Jika tidak ada yang error berarti sukses!!
 
 
